@@ -268,7 +268,7 @@ document.getElementById('buttonScoreDcComics').addEventListener('click', functio
     countIncorrect++;
   }
 }
-document.getElementById('results0').innerHTML =  countCorrect+ '     '  + 'Respuestas correctas' + '     ' + countIncorrect + 'Respuestas incorrectas' + '\n'  ;
+document.getElementById('results0').innerHTML =  countCorrect+ '     '  + 'Respuestas correctas y ' + '     ' + countIncorrect + '     ' +'Respuestas incorrectas'  ;
 });
 
 
