@@ -135,10 +135,7 @@ document.getElementById('buttonThor').addEventListener('click', function (){
 }); 
 // DESPLIEGA PELÍCULAS CON HULK (GRUPO MARVEL)
   document.getElementById('buttonHulk').addEventListener('click', function (){
-const fetchUrl = `http://www.omdbapi.com/?i=tt3896198&apikey=4ceb79a2`;
-const searchParam = "s=hulk";
-fetch(`${fetchUrl}&${searchParam}`)
-   // fetch('http://www.omdbapi.com/?s=hulk&apikey=4ceb79a2')
+ fetch('http://www.omdbapi.com/?s=hulk&apikey=4ceb79a2')
     .then((response) => {
       if (response.ok){
         return response.json();
@@ -211,6 +208,21 @@ document.getElementById('buttonSearch').addEventListener('click', function (){
 //TRIVIA MARVEL
 document.getElementById('buttonPlayMarvel').addEventListener('click', function (){
   document.getElementById('buttonPlayMarvel').style.display='none';
+  document.getElementById('buttonPlayDcComics').style.display='none';
+
+  document.getElementById('buttonBatman').style.display='none';
+  document.getElementById('buttonSuperman').style.display='none';
+  document.getElementById('buttonGreenLantern').style.display='none';
+  document.getElementById('results1').style.display='none';
+ 
+  document.getElementById('buttonThor').style.display='none';
+  document.getElementById('buttonCaptainAmerica').style.display='none';
+  document.getElementById('buttonHulk').style.display='none';
+  document.getElementById('results2').style.display='none';
+
+
+
+
   document.getElementById('results').innerHTML = "";
   for (let i = 0; i < MARVEL.length; i += 1) {
     document.getElementById('results0').innerHTML += `<div class ="trivia"><ul class='lista'><li>PREGUNTA ${MARVEL[i].numberQuestion}</li><br><li> ${MARVEL[i].question}</li><br><li>${MARVEL[i].answers.A}</li><li> ${MARVEL[i].answers.B}</li><li>${MARVEL[i].answers.C}</li></ul></div><input type='text' name="answer${i}" id="answer${i}" class="texts" value="Respuesta">`;
@@ -230,11 +242,11 @@ document.getElementById('buttonScoreMarvel').addEventListener('click', function 
   a[2]=document.getElementById('answer2').value;
   for (let i = 0; i < MARVEL.length; i += 1) {
     if(a[i]===MARVEL[i].correctAnswer){
-    document.getElementById('results').innerHTML += `<div class ="trivia"><ul class='lista'><li>La respuesta ${MARVEL[i].numberQuestion} es correcta</li></ul></div>`;
+  //  document.getElementById('results').innerHTML += `<div class ="trivia"><ul class='lista'><li>La respuesta ${MARVEL[i].numberQuestion} es correcta</li></ul></div>`;
     countCorrect++;
   }
   if(a[i]!==MARVEL[i].correctAnswer){
-    document.getElementById('results').innerHTML += `<div class ="trivia"><ul class='lista'><li>La respuesta ${MARVEL[i].numberQuestion} es incorrecta</li></ul></div>`;
+ //   document.getElementById('results').innerHTML += `<div class ="trivia"><ul class='lista'><li>La respuesta ${MARVEL[i].numberQuestion} es incorrecta</li></ul></div>`;
     countIncorrect++;
   }
 }
@@ -254,7 +266,7 @@ document.getElementById('buttonPlayDcComics').addEventListener('click', function
 //REVISIÓN DE RESPUESTAS DC COMICS
 document.getElementById('buttonScoreDcComics').addEventListener('click', function (){
   document.getElementById('buttonScoreDcComics').style.display='none';
-  document.getElementById('results').innerHTML = '';
+  document.getElementById('results0').innerHTML = '';
   let a =[] ;
   let countCorrect=0;
   let countIncorrect = 0;
@@ -263,16 +275,32 @@ document.getElementById('buttonScoreDcComics').addEventListener('click', functio
   a[2]=document.getElementById('answer2').value;
   for (let i = 0; i < DCCOMICS.length; i += 1) {
     if(a[i]===DCCOMICS[i].correctAnswer){
-    document.getElementById('results').innerHTML += `<div class ="trivia"><ul class='lista'><li>La respuesta ${DCCOMICS[i].numberQuestion} es correcta</li></ul></div>`;
+   // document.getElementById('results').innerHTML += `<div class ="trivia"><ul class='lista'><li>La respuesta ${DCCOMICS[i].numberQuestion} es correcta</li></ul></div>`;
     countCorrect++;
   }
   if(a[i]!==DCCOMICS[i].correctAnswer){
-    document.getElementById('results').innerHTML += `<div class ="trivia"><ul class='lista'><li>La respuesta ${DCCOMICS[i].numberQuestion} es incorrecta</li></ul></div>`;
+   // document.getElementById('results').innerHTML += `<div class ="trivia"><ul class='lista'><li>La respuesta ${DCCOMICS[i].numberQuestion} es incorrecta</li></ul></div>`;
     countIncorrect++;
   }
 }
 document.getElementById('results0').innerHTML =  countCorrect+ '     '  + 'Respuestas correctas y ' + '     ' + countIncorrect + '     ' +'Respuestas incorrectas'  ;
 });
 
+document.getElementById('buttonBack').addEventListener('click', function (){
+  document.getElementById('buttonBack').style.display='inline-flex';
+  document.getElementById('buttonPlayMarvel').style.display='inline-flex';
+  document.getElementById('buttonPlayDcComics').style.display='inline-flex';
 
+  document.getElementById('buttonBatman').style.display='inline-flex';
+  document.getElementById('buttonSuperman').style.display='inline-flex';
+  document.getElementById('buttonGreenLantern').style.display='inline-flex';
+  document.getElementById('results1').style.display='inline-flex';
+ 
+  document.getElementById('buttonThor').style.display='inline-flex';
+  document.getElementById('buttonCaptainAmerica').style.display='inline-flex';
+  document.getElementById('buttonHulk').style.display='inline-flex';
+  document.getElementById('results2').style.display='inline-flex';
 
+  document.getElementById('results').innerHTML = "";
+
+});
