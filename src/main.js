@@ -135,7 +135,10 @@ document.getElementById('buttonThor').addEventListener('click', function (){
 }); 
 // DESPLIEGA PELÍCULAS CON HULK (GRUPO MARVEL)
   document.getElementById('buttonHulk').addEventListener('click', function (){
-    fetch('http://www.omdbapi.com/?s=hulk&apikey=4ceb79a2')
+const fetchUrl = `http://www.omdbapi.com/?i=tt3896198&apikey=4ceb79a2`;
+const searchParam = "s=hulk";
+fetch(`${fetchUrl}&${searchParam}`)
+   // fetch('http://www.omdbapi.com/?s=hulk&apikey=4ceb79a2')
     .then((response) => {
       if (response.ok){
         return response.json();
