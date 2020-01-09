@@ -248,7 +248,8 @@ document.getElementById('buttonScoreMarvel').addEventListener('click', function 
     countIncorrect++;
   }
 }
-document.getElementById('results0').innerHTML =  countCorrect+ '     '  + 'Respuestas correctas y ' + '     ' + countIncorrect + '     ' +'Respuestas incorrectas'  ;
+document.getElementById('results0').innerHTML =   'Respuestas correctas:  '+ countCorrect  + ' Respuestas Incorrectas:    ' + countIncorrect ;
+
 
 });
 
