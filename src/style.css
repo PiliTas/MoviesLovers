@@ -16,24 +16,27 @@ a {
     color: #ffffff;
     margin-left: 1%;
   }
-
-  .move{
-    border: 0px;
-    width: 240px;
-    position: relative;
-    background: transparent;
-    outline: none;
-    bottom: 4px;
-    padding: 2px;
-    color: blanchedalmond;
+  .logo{
+    margin-left: 120px;
+    margin-top: -35px;
+  }
+  .navbar{
+    background:#033261;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    display: wrap;
+   
 }
-.icon {
-    width: 20px;
-    height: 20px;
-    margin-right:130px;
-    border: 0px;
-    position: relative;
-    top:1px;
+.move{
+  border: 0px;
+  width: 240px;
+  position: relative;
+  background: transparent;
+  outline: none;
+  bottom: 4px;
+  padding: 2px;
+  color: blanchedalmond;
 }
    
   /*frase*/
@@ -228,17 +231,20 @@ display: inline-block;
     }
 
     .searching{
-      
+      width: 100%;
       height: 1000px;
       padding:30px;
       color:#5D576B;  
       margin-bottom:100px;
-      margin-left: 50%;
+   
+  
+
       }
 
      #searchTitle{
-       width: 20%;
+       width: 50%;
        float: right;
+      
      }
 
      #buttonSearch{
@@ -259,3 +265,30 @@ display: inline-block;
    #container{
     width: 100%;
    }
+   .footer{
+    position: absolute;
+    width: 1345px;
+    height:90px;
+    left: 0px;
+   
+    background: #033261;
+   }
+   .btna ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;     
+   }
+   .pag{
+    font-family:Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #7C91A5;
+    margin-left: 150px;
+   }
+   @font-face{font-family:roboto; 
+       src:url(font/Roboto-Regular.ttf);}
+   
+   @font-face{font-family:asul; 
+       src:url(font/Asul-Bold.ttf);}
