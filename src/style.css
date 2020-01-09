@@ -17,6 +17,24 @@ a {
     margin-left: 1%;
   }
 
+  .move{
+    border: 0px;
+    width: 240px;
+    position: relative;
+    background: transparent;
+    outline: none;
+    bottom: 4px;
+    padding: 2px;
+    color: blanchedalmond;
+}
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right:130px;
+    border: 0px;
+    position: relative;
+    top:1px;
+}
    
   /*frase*/
   h1{  
@@ -210,6 +228,7 @@ display: inline-block;
     }
 
     .searching{
+      
       height: 1000px;
       padding:30px;
       color:#5D576B;  
@@ -219,6 +238,11 @@ display: inline-block;
 
      #searchTitle{
        width: 20%;
+       float: right;
+     }
+
+     #buttonSearch{
+      float: right;
      }
     #buttonScoreMarvel{
         display:none;
