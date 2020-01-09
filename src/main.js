@@ -193,7 +193,7 @@ document.getElementById('buttonSearch').addEventListener('click', function (){
     throw response;
   })
   .then(data => {
-    document.getElementById('results').innerHTML += `<div class ="card"><ul class='lista'><li>${data.Title}</li><li><img src = ${data.Poster}></li></ul><div class='plot'><h4>Director: ${data.Director}</h4>${data.Plot}<hr><h5><br>Año de estreno: ${data.Year}</div></div>`;
+    document.getElementById('results').innerHTML += `<div class ="card"><ul class='lista'><li>${data.Title}</li><li><img src = ${data.Poster}></li></ul><div class='plot'><h4>Director: ${data.Director}</h4>${data.Plot}<hr><h5><br>Año de estreno: ${data.Year}<p>Genero: ${data.Genre}</p><p>Actors: ${data.Actors}</p><p>Language: ${data.Language}</p><p>Country: ${data.Country}</p><p>Clasification: ${data.imdbRating}</p></div></div>`;
   })
   .catch((error)=> {
     console.log('error',error)
@@ -249,8 +249,6 @@ document.getElementById('buttonScoreMarvel').addEventListener('click', function 
   }
 }
 document.getElementById('results0').innerHTML =   'Respuestas correctas:  '+ countCorrect  + ' Respuestas Incorrectas:    ' + countIncorrect ;
-
-
 });
 
 //TRIVIA DC COMICS
