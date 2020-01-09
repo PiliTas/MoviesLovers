@@ -24,20 +24,20 @@ Nuestro primer prototipo de baja fidelidad
 
 
 Flujo de usuario a través de la página 
-![prototipo figma](Prototipos/flujo.jpg)
+![prototipo figma](Prototipos/flujo.JPG)
 
 Nuestro prototipo de figma de alta fidelidad 
-![prototipo figma](Prototipos/prot1.jpg)
+![prototipo figma](Prototipos/Prot1.jpg)
 
-![prototipo figma](Prototipos/prot2.jpg)
+![prototipo figma](Prototipos/Prot2.jpg)
 
-![prototipo figma](Prototipos/prot3.jpg)
+![prototipo figma](Prototipos/Prot3.jpg)
 
-![prototipo figma](Prototipos/prot4.jpg)
+![prototipo figma](Prototipos/Prot4.jpg)
 
-![prototipo figma](Prototipos/prot5.jpg)
+![prototipo figma](Prototipos/Prot5.jpg)
 
-![prototipo figma](Prototipos/prot6.jpg)
+![prototipo figma](Prototipos/Prot6.jpg)
 
 Nuestro prototipo de figma de alta para movil
 ![prototipo movil](Prototipos/phono1.jpg)
