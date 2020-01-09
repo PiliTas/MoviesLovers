@@ -7,7 +7,7 @@ import DCCOMICS from './data/dccomics/dccomics.js';
 window.onload = () => {
 
 //DESPLIEGA PELÍCULAS CON BATMAN (GRUPO DC)
-  fetch('http://www.omdbapi.com/?s=batman&apikey=4ceb79a2')
+  fetch('https://www.omdbapi.com/?s=batman&apikey=4ceb79a2')
   .then(response => {
     return response.json()
   })
@@ -20,7 +20,7 @@ window.onload = () => {
 })
 
 //DESPLIEGA PELÍCULAS CON THOR (GRUPO MARVEL)
-  fetch('http://www.omdbapi.com/?s=thor&apikey=4ceb79a2')
+  fetch('https://www.omdbapi.com/?s=thor&apikey=4ceb79a2')
   .then(response => {
     return response.json()
   })
@@ -41,7 +41,7 @@ window.onload = () => {
 //MUESTRA GRUPO DC
 // DESPLIEGA PELÍCULAS CON BATMAN(GRUPO DC)
 document.getElementById('buttonBatman').addEventListener('click', function (){
-  fetch('http://www.omdbapi.com/?s=batman&apikey=4ceb79a2')
+  fetch('https://www.omdbapi.com/?s=batman&apikey=4ceb79a2')
   .then((response) => {
     if (response.ok){
       return response.json();
@@ -64,7 +64,7 @@ document.getElementById('buttonBatman').addEventListener('click', function (){
 //MUESTRA GRUPO DC
 // DESPLIEGA PELÍCULAS CON GREEN LANTERN (GRUPO DC)
 document.getElementById('buttonGreenLantern').addEventListener('click', function (){
-  fetch('http://www.omdbapi.com/?s=green lantern&apikey=4ceb79a2')
+  fetch('https://www.omdbapi.com/?s=green lantern&apikey=4ceb79a2')
   .then((response) => {
     if (response.ok){
       return response.json();
@@ -87,7 +87,7 @@ document.getElementById('buttonGreenLantern').addEventListener('click', function
   
 // DESPLIEGA PELÍCULAS CON SUPERMAN (GRUPO DC)
 document.getElementById('buttonSuperman').addEventListener('click', function (){
-  fetch('http://www.omdbapi.com/?s=superman&apikey=4ceb79a2')
+  fetch('https://www.omdbapi.com/?s=superman&apikey=4ceb79a2')
   .then((response) => {
     if (response.ok){
       return response.json();
@@ -113,7 +113,7 @@ document.getElementById('buttonSuperman').addEventListener('click', function (){
 //MUESTRA GRUPO MARVEL
 // DESPLIEGA PELÍCULAS CON THOR (GRUPO MARVEL)
 document.getElementById('buttonThor').addEventListener('click', function (){
-  fetch('http://www.omdbapi.com/?s=Thor&apikey=4ceb79a2')
+  fetch('https://www.omdbapi.com/?s=Thor&apikey=4ceb79a2')
   .then((response) => {
     if (response.ok){
       return response.json();
@@ -135,7 +135,7 @@ document.getElementById('buttonThor').addEventListener('click', function (){
 }); 
 // DESPLIEGA PELÍCULAS CON HULK (GRUPO MARVEL)
   document.getElementById('buttonHulk').addEventListener('click', function (){
- fetch('http://www.omdbapi.com/?s=hulk&apikey=4ceb79a2')
+ fetch('https://www.omdbapi.com/?s=hulk&apikey=4ceb79a2')
     .then((response) => {
       if (response.ok){
         return response.json();
@@ -158,7 +158,7 @@ document.getElementById('buttonThor').addEventListener('click', function (){
   
 // DESPLIEGA PELÍCULAS CON CAPTAIN AMERICA(GRUPO MARVEL)
 document.getElementById('buttonCaptainAmerica').addEventListener('click', function (){
-  fetch('http://www.omdbapi.com/?s=Captain America&apikey=4ceb79a2')
+  fetch('https://www.omdbapi.com/?s=Captain America&apikey=4ceb79a2')
   .then((response) => {
     if (response.ok){
       return response.json();
@@ -185,7 +185,7 @@ document.getElementById('buttonCaptainAmerica').addEventListener('click', functi
 document.getElementById('buttonSearch').addEventListener('click', function (){
   document.getElementById('results').innerHTML = "";
   let titleMovie = document.getElementById("searchTitle").value;
-  fetch('http://www.omdbapi.com/?t=' + titleMovie+ '&apikey=4ceb79a2')
+  fetch('https://www.omdbapi.com/?t=' + titleMovie+ '&apikey=4ceb79a2')
   .then((response) => {
     if (response.ok){
       return response.json();
