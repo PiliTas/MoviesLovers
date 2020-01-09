@@ -193,7 +193,7 @@ document.getElementById('buttonSearch').addEventListener('click', function (){
     throw response;
   })
   .then(data => {
-    document.getElementById('results').innerHTML += `<div class ="card"><ul class='lista'><li>${data.Title}</li><li><img src = ${data.Poster}></li></ul><div class='plot'>${data.Plot}<hr><h5><br>Año de estreno: ${data.Year}</div></div>`;
+    document.getElementById('results').innerHTML += `<div class ="card"><ul class='lista'><li>${data.Title}</li><li><img src = ${data.Poster}></li></ul><div class='plot'><h4>Director: ${data.Director}</h4>${data.Plot}<hr><h5><br>Año de estreno: ${data.Year}</div></div>`;
   })
   .catch((error)=> {
     console.log('error',error)
@@ -230,6 +230,7 @@ document.getElementById('buttonPlayMarvel').addEventListener('click', function (
 //REVISIÓN DE RESPUESTAS MARVEL
 document.getElementById('buttonScoreMarvel').addEventListener('click', function (){
   document.getElementById('buttonScoreMarvel').style.display='none';
+  document.getElementById('buttonBack').style.display='inline-flex';
   document.getElementById('results').innerHTML = '';
   let a =[] ;
   let countCorrect=0;
@@ -248,6 +249,7 @@ document.getElementById('buttonScoreMarvel').addEventListener('click', function 
   }
 }
 document.getElementById('results0').innerHTML =  countCorrect+ '     '  + 'Respuestas correctas y ' + '     ' + countIncorrect + '     ' +'Respuestas incorrectas'  ;
+
 });
 
 //TRIVIA DC COMICS
@@ -275,7 +277,9 @@ document.getElementById('buttonPlayDcComics').addEventListener('click', function
 //REVISIÓN DE RESPUESTAS DC COMICS
 document.getElementById('buttonScoreDcComics').addEventListener('click', function (){
   document.getElementById('buttonScoreDcComics').style.display='none';
-  document.getElementById('results').innerHTML = '';
+  document.getElementById('buttonBack').style.display='inline-flex';
+   document.getElementById('results').innerHTML = '';
+   
   let a =[] ;
   let countCorrect=0;
   let countIncorrect = 0;
@@ -292,12 +296,15 @@ document.getElementById('buttonScoreDcComics').addEventListener('click', functio
     countIncorrect++;
   }
 }
-document.getElementById('results0').innerHTML =  countCorrect+ '     '  + 'Respuestas correctas y ' + '     ' + countIncorrect + '     ' +'Respuestas incorrectas'  ;
+
+document.getElementById('results0').innerHTML = 'Respuestas correctas:  '+ countCorrect  + ' Respuestas Incorrectas:    ' + countIncorrect ;
+
+
 });
 
 
 document.getElementById('buttonBack').addEventListener('click', function (){
-  document.getElementById('buttonBack').style.display='inline-flex';
+  document.getElementById('buttonBack').style.display='none';
   document.getElementById('buttonPlayMarvel').style.display='inline-flex';
   document.getElementById('buttonPlayDcComics').style.display='inline-flex';
 

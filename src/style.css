@@ -4,16 +4,17 @@ a {
   
   *{  
     z-index:  auto ;
-    margin: 0;
+    margin: 0%;
   }
   body{
     width:100%;
-   /* background-image: url(img/fondo.jpg) ;*/
     font-size: 15px;
     font-weight: 400;
     display:flexbox; 
     background-color: #1C2732;
+    align-content: center;
     color: #ffffff;
+    margin-left: 1%;
   }
 
    
@@ -21,7 +22,7 @@ a {
   h1{  
     font-size: 2em;
     text-transform: uppercase;
-    padding-top: 120px;
+  
     margin-right: 30px
   }
 
@@ -40,31 +41,6 @@ h3, h4{
   text-align:center;
   } 
 
- 
-
-
-
-  .ficha{
-    display: inline-block;
-    width: 200px; 
-    color: #fff;
-    margin-top: 70px;
-    border-radius: 32px;
-    text-align: center;
-    outline: none;
-    text-decoration: none;
-    font-family: 'sofia-pro', sans-serif;
-    font-style: normal;
-    font-size: 18px;
-    border: 2px solid #fff;
-    margin-left: 495px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-  }
-  
-  .ficha:hover,.ficha:active{  
-    justify-content: center;
-  }
 .results{
   padding: 0;
   list-style: none;
@@ -74,7 +50,7 @@ h3, h4{
   display: -webkit-flex;
   display:inline-flex;
   justify-content: space-around;
-  height: 500px;
+  height: 700px;
   
 }
 .results1{
@@ -103,16 +79,12 @@ h3, h4{
   
 }
 
-
-
-
-
 .plot{
   width: 50%;
-  height:80%;
+padding-top: -100px;
   margin: 1em;
-  border: 1px solid #FFFFFF;
-  font-size:80%;
+  border: 1px ;
+
   text-align: left;
 }
 
@@ -132,23 +104,18 @@ h3, h4{
   padding-left: 19px;
   padding-right: 19px;
 }
-
-
-
-
-
 .card {
-  width: 40%;
+  width: 60%;
   height:280px;
   margin: 1em;
   font-size: 150%;
   border-radius: 1em;
-  display: inline-flex;
+  display:inline-flex;
   text-align: center;
   color: #ffffff;
-  align-content: space-between;
+  align-content: stretch;
   align-items: baseline;
-  padding-top:19px;
+  padding-top:9px;
   border: 1px solid #FFFFFF;
   padding-left: 19px;
   padding-right: 19px;
@@ -181,9 +148,9 @@ h3, h4{
  
 
 .card img{
- width: 60%;
+ width: 50%;
  height:200px;
- padding: 0;
+ padding-top:20px ;
  align-self: center;  
 }
 
@@ -213,7 +180,7 @@ display: inline-block;
   border-radius:8px;
   padding:10px;
   font-family: Verdana;
-  font-size: 10px; 
+  font-size: 15px; 
   color:#5D576B;  
   margin-top: 10px;
   resize:none;
@@ -246,12 +213,24 @@ display: inline-block;
       padding:30px;
       color:#5D576B;  
       margin-bottom:100px;
+      margin-left: 50%;
       }
 
-      #buttonScoreMarvel{
+     #searchTitle{
+       width: 20%;
+     }
+    #buttonScoreMarvel{
         display:none;
       }
-
-      #buttonScoreDcComics{
+     #buttonScoreDcComics{
+        display:none;
+      }   
+      #buttonBack {
         display:none;
       }
+   #play{
+     padding-left:35%;
+   }
+   #container{
+    width: 100%;
+   }
