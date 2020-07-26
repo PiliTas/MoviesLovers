@@ -4,7 +4,7 @@
 
 ## 1. Resumen del proyecto
 
-Movie Lovers fue creado para los amantes de las películas de súper héroes. Como siempre hay fans que defienden a Marvel, otros a DC comics - y algunos gustan de ambos, no logrando decidirse por uno - se creó esta página; para saber cuánto saben de los universos creados en las películas de DC Comics y Marvel.
+Movie Lovers fue creado para los amantes de las películas de súper héroes. Como siempre hay fans que defienden a Marvel, otros a DC Comics - y algunos gustan de ambos, no logrando decidirse por uno - se creó esta página; para saber cuánto saben de los universos creados en las películas de DC Comics y Marvel.
 Cada universo cuenta con una trivia en la que si se responde correctamente, se sabrá si, realmente, cada fans es un experto en su Liga Favorita.
 Además se puede encontrar información de cada película para que las respuestas se puedan revisar.
 
@@ -18,7 +18,7 @@ Diseñamos una aplicación que tuviera bastante gráfica de las películas e int
 
 
 ### Prototipos
-A continuación se muestra el:
+A continuación se muestra:
 * Primer prototipo de baja fidelidad
 ![prototipo balsamiq](Prototipos/bal1.jpg)
 ![prototipo balsamiq](Prototipos/bal2.jpg)
