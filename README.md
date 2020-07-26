@@ -4,15 +4,15 @@
 
 ## 1. Resumen del proyecto
 
-Movie Lovers fue creado para los amantes de las películas de súper héroes. Como siempre hay fans que defienden a Marvel, otros a DC comics - mientras que, algunos, gustan de ambos, no logrando decidirse por uno - se creo esta página, para saber cuánto saben de los universos creados en las películas de DC Comics y Marvel.
-Cada universo cuenta con una trivia en la que si se responde correctamente, sabrás si eres realmente un experto en tu Liga Favorita.
-Además encontrarás información de cada película para que puedas comprobar tus respuestas.
+Movie Lovers fue creado para los amantes de las películas de súper héroes. Como siempre hay fans que defienden a Marvel, otros a DC comics - y algunos gustan de ambos, no logrando decidirse por uno - se creó esta página; para saber cuánto saben de los universos creados en las películas de DC Comics y Marvel.
+Cada universo cuenta con una trivia en la que si se responde correctamente, se sabrá si, realmente, cada fans es un experto en su Liga Favorita.
+Además se puede encontrar información de cada película para que las respuestas se puedan revisar.
 
 
 ## UX
-El proyecto comenzó con una investigación sobre las películas más taquilleras del año 2019. En el siguiente [link](https://spoiler.bolavip.com/cuales-son-las-peliculas-mas-taquilleras-con-mayor-recaudacion-de-2019-t201912300003.html), puedes observar que casi todos los años hay estrenos de películas de Marvel o DC Comics, ya que sus infinitos universos no tienen para cuándo acabar y siempre será éxitoso tener en estreno una película de súper héroes.
+El proyecto comenzó con una investigación sobre las películas más taquilleras del año 2019. En el siguiente [link](https://spoiler.bolavip.com/cuales-son-las-peliculas-mas-taquilleras-con-mayor-recaudacion-de-2019-t201912300003.html), se puede observar que casi todos los años hay estrenos de películas de Marvel o DC Comics; esto es porque sus infinitos universos no tienen para cuándo acabar y siempre será éxitoso tener en estreno una película de súper héroes.
 
-Como la discusión de cuál es la mejor liga y sus comparativos de personajes, viene desde hace mucho antes, se creó Movie Lovers en dónde podrás saber qué tan fanático eres, si puedes responder toda la trivia correctamente y además tener información detallada de cada una de las películas de ambos universos.
+Como la discusión de cuál es la mejor liga, viene desde hace mucho tiempo atrás, se creó Movie Lovers en dónde podrás saber qué tan fanático eres y si puedes responder toda la trivia correctamente. También, podrás encontrar información detallada de cada una de las películas de ambos universos.
 
 Diseñamos una aplicación que tuviera bastante gráfica de las películas e intuitivo, para que fuese amigable y asociativo con sus mundos.
 
